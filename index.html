@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PallaviBuild | Modern Construction & Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FFB800',
+                        secondary: '#1A1A1A',
+                        accent: '#333333',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-secondary/90 backdrop-blur-md text-white border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-2">
+                    <div class="bg-primary p-2 rounded">
+                        <i class="fas fa-hard-hat text-black text-2xl"></i>
+                    </div>
+                    <span class="text-2xl font-black tracking-tighter uppercase">Pallavi<span
+                            class="text-primary">Build</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#home" class="hover:text-primary transition">Home</a>
+                    <a href="#about" class="hover:text-primary transition">About</a>
+                    <a href="#services" class="hover:text-primary transition">Services</a>
+                    <a href="#projects" class="hover:text-primary transition">Projects</a>
+                    <a href="#estimator" class="hover:text-primary transition">Cost Calculator</a>
+                    <a href="#contact"
+                        class="bg-primary text-black px-6 py-2 rounded font-bold hover:bg-yellow-400 transition">Get a
+                        Quote</a>
+                </div>
+                <button class="md:hidden text-2xl" id="menuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=2070"
+                class="w-full h-full object-cover" alt="Construction site">
+            <div class="absolute inset-0 bg-black/60"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
+            <div class="max-w-3xl">
+                <h2 class="text-primary font-bold tracking-widest uppercase mb-4 animate-bounce">Building the Future
+                </h2>
+                <h1 class="text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
+                    Engineering <span class="text-primary underline decoration-4 underline-offset-8">Excellence</span>
+                    Since 1995.
+                </h1>
+                <p class="text-xl text-gray-300 mb-8 border-l-4 border-primary pl-6">
+                    From residential renovations to industrial complexes, we deliver precision, durability, and
+                    innovation in every brick laid.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#projects"
+                        class="bg-primary text-black px-8 py-4 rounded-sm font-bold text-center hover:scale-105 transition transform">View
+                        Our Projects</a>
+                    <a href="#services"
+                        class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-sm font-bold text-center hover:bg-white hover:text-black transition">Our
+                        Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-secondary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <div class="text-4xl font-bold text-primary mb-2" data-target="250">0</div>
+                <div class="uppercase text-sm tracking-widest text-gray-400">Projects Completed</div>
+            </div>
+            <div>
+                <div class="text-4xl font-bold text-primary mb-2" data-target="25">0</div>
+                <div class="uppercase text-sm tracking-widest text-gray-400">Years Experience</div>
+            </div>
+            <div>
+                <div class="text-4xl font-bold text-primary mb-2" data-target="150">0</div>
+                <div class="uppercase text-sm tracking-widest text-gray-400">Expert Workers</div>
+            </div>
+            <div>
+                <div class="text-4xl font-bold text-primary mb-2" data-target="15">0</div>
+                <div class="uppercase text-sm tracking-widest text-gray-400">Awards Won</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Before/After -->
+    <section id="about" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-primary font-bold mb-2 uppercase tracking-tighter">About Our Firm</h3>
+                    <h2 class="text-4xl font-black mb-6">Quality You Can Trust, <br>Experience You Can Rely On.</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        PallaviBuild has been a leader in the construction industry for over two decades. We specialize
+                        in
+                        turning complex architectural designs into reality using sustainable materials and cutting-edge
+                        technology.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-primary text-xl"></i>
+                            <span class="font-bold">Certified Professional Engineering</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-primary text-xl"></i>
+                            <span class="font-bold">Eco-Friendly Construction Materials</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-primary text-xl"></i>
+                            <span class="font-bold">On-time Project Completion Guarantee</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Before/After Slider Mockup -->
+                <div class="before-after-container rounded-xl shadow-2xl h-[400px]">
+                    <div class="absolute inset-0 bg-cover bg-center"
+                        style="background-image: url('https://images.unsplash.com/photo-1503387762-592dee58c460?auto=format&fit=crop&q=80&w=1000');">
+                        <div class="absolute bottom-4 left-4 bg-black/50 text-white px-3 py-1 text-sm">BEFORE</div>
+                    </div>
+                    <div id="after-img" class="absolute inset-0 bg-cover bg-center overflow-hidden"
+                        style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000'); width: 50%;">
+                        <div class="absolute bottom-4 right-4 bg-primary text-black font-bold px-3 py-1 text-sm">AFTER
+                        </div>
+                    </div>
+                    <input type="range" min="0" max="100" value="50"
+                        class="absolute inset-0 opacity-0 cursor-ew-resize z-20 w-full" id="slider">
+                    <div class="slider-handle" id="handle" style="left: 50%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-primary font-bold uppercase mb-2">Our Services</h2>
+                <h3 class="text-4xl font-black">What We Do Best</h3>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div
+                    class="bg-white p-8 group hover:bg-secondary hover:text-white transition duration-300 shadow-sm border-b-4 border-primary">
+                    <i class="fas fa-building text-5xl text-primary mb-6 group-hover:scale-110 transition"></i>
+                    <h4 class="text-2xl font-bold mb-4">Commercial Building</h4>
+                    <p class="text-gray-500 group-hover:text-gray-300">Advanced office spaces, retail malls, and
+                        high-rise developments designed for functionality.</p>
+                </div>
+                <!-- Service 2 -->
+                <div
+                    class="bg-white p-8 group hover:bg-secondary hover:text-white transition duration-300 shadow-sm border-b-4 border-primary">
+                    <i class="fas fa-home text-5xl text-primary mb-6 group-hover:scale-110 transition"></i>
+                    <h4 class="text-2xl font-bold mb-4">Residential Homes</h4>
+                    <p class="text-gray-500 group-hover:text-gray-300">Custom luxury homes tailored to your lifestyle
+                        with smart home integration features.</p>
+                </div>
+                <!-- Service 3 -->
+                <div
+                    class="bg-white p-8 group hover:bg-secondary hover:text-white transition duration-300 shadow-sm border-b-4 border-primary">
+                    <i class="fas fa-tools text-5xl text-primary mb-6 group-hover:scale-110 transition"></i>
+                    <h4 class="text-2xl font-bold mb-4">Renovations</h4>
+                    <p class="text-gray-500 group-hover:text-gray-300">Modernizing old structures with modern aesthetics
+                        while maintaining structural integrity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost Estimator -->
+    <section id="estimator" class="py-20 bg-secondary text-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="bg-accent p-8 rounded-xl border border-white/10 shadow-2xl">
+                <h2 class="text-3xl font-black mb-8 text-center">Project <span class="text-primary">Cost
+                        Estimator</span></h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <label class="block mb-2 font-bold">Project Type</label>
+                        <select id="projType"
+                            class="w-full bg-secondary border border-gray-600 p-3 rounded focus:border-primary outline-none">
+                            <option value="150">Basic Residential ($150/sqft)</option>
+                            <option value="250">Luxury Residential ($250/sqft)</option>
+                            <option value="350">Commercial Office ($350/sqft)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block mb-2 font-bold">Total Area (sq. ft.)</label>
+                        <input type="number" id="sqft" placeholder="e.g. 2000"
+                            class="w-full bg-secondary border border-gray-600 p-3 rounded focus:border-primary outline-none">
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <div class="text-gray-400 mb-2 uppercase tracking-widest text-sm">Estimated Total</div>
+                    <div class="text-5xl font-black text-primary" id="estimateResult">$0.00</div>
+                    <button onclick="calculateCost()"
+                        class="mt-6 bg-primary text-black px-10 py-3 rounded-full font-bold hover:bg-yellow-400">Calculate
+                        Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Gallery -->
+    <section id="projects" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-primary font-bold uppercase mb-2">Portfolio</h2>
+                    <h3 class="text-4xl font-black">Featured Projects</h3>
+                </div>
+                <div class="hidden md:flex gap-4">
+                    <button class="filter-btn active text-primary font-bold border-b-2 border-primary pb-1"
+                        data-filter="all">All</button>
+                    <button class="filter-btn text-gray-500 hover:text-black"
+                        data-filter="commercial">Commercial</button>
+                    <button class="filter-btn text-gray-500 hover:text-black"
+                        data-filter="residential">Residential</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="projectGrid">
+                <!-- Project 1 -->
+                <div class="project-card relative group overflow-hidden h-80 bg-gray-200" data-cat="commercial">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1000"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div
+                        class="overlay absolute inset-0 bg-primary/90 opacity-0 transition-opacity flex flex-col justify-center items-center text-center p-6">
+                        <h4 class="text-2xl font-black text-black">Skyline Plaza</h4>
+                        <p class="text-black/80 mt-2 font-medium uppercase text-sm">Commercial Hub • 2023</p>
+                        <button
+                            class="mt-4 border-2 border-black px-4 py-2 text-sm font-bold hover:bg-black hover:text-white transition">View
+                            Details</button>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card relative group overflow-hidden h-80 bg-gray-200" data-cat="residential">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1000"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div
+                        class="overlay absolute inset-0 bg-primary/90 opacity-0 transition-opacity flex flex-col justify-center items-center text-center p-6">
+                        <h4 class="text-2xl font-black text-black">Pine Villa</h4>
+                        <p class="text-black/80 mt-2 font-medium uppercase text-sm">Residential • 2022</p>
+                        <button
+                            class="mt-4 border-2 border-black px-4 py-2 text-sm font-bold hover:bg-black hover:text-white transition">View
+                            Details</button>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card relative group overflow-hidden h-80 bg-gray-200" data-cat="commercial">
+                    <img src="https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?auto=format&fit=crop&q=80&w=1000"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div
+                        class="overlay absolute inset-0 bg-primary/90 opacity-0 transition-opacity flex flex-col justify-center items-center text-center p-6">
+                        <h4 class="text-2xl font-black text-black">Industrial Park</h4>
+                        <p class="text-black/80 mt-2 font-medium uppercase text-sm">Industrial • 2024</p>
+                        <button
+                            class="mt-4 border-2 border-black px-4 py-2 text-sm font-bold hover:bg-black hover:text-white transition">View
+                            Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-primary">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <i class="fas fa-quote-left text-5xl text-black/20 mb-4"></i>
+                <h2 class="text-4xl font-black text-black">Voices of Satisfaction</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded shadow-lg">
+                    <p class="text-gray-600 italic mb-6">"PallaviBuild transformed our outdated office into a modern
+                        masterpiece. Their attention to detail is unmatched."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full overflow-hidden">
+                            <img src="https://i.pravatar.cc/150?u=1" alt="client">
+                        </div>
+                        <div>
+                            <h5 class="font-bold">John Stevens</h5>
+                            <p class="text-xs uppercase text-gray-400 tracking-widest">CEO, TechCore</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded shadow-lg">
+                    <p class="text-gray-600 italic mb-6">"The best contractors I've ever worked with. They finished 2
+                        weeks early and stayed exactly on budget."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full overflow-hidden">
+                            <img src="https://i.pravatar.cc/150?u=2" alt="client">
+                        </div>
+                        <div>
+                            <h5 class="font-bold">Maria Garcia</h5>
+                            <p class="text-xs uppercase text-gray-400 tracking-widest">Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded shadow-lg">
+                    <p class="text-gray-600 italic mb-6">"Professional, reliable, and innovative. Their use of
+                        eco-friendly materials was exactly what we needed."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full overflow-hidden">
+                            <img src="https://i.pravatar.cc/150?u=3" alt="client">
+                        </div>
+                        <div>
+                            <h5 class="font-bold">Robert Chen</h5>
+                            <p class="text-xs uppercase text-gray-400 tracking-widest">Property Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-primary font-bold uppercase mb-2">Contact Us</h2>
+                    <h3 class="text-4xl font-black mb-6">Ready to Start Your Project?</h3>
+                    <p class="text-gray-600 mb-8">Fill out the form below or reach out directly via phone or email. Our
+                        team typically responds within 24 hours.</p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-primary/20 p-3 rounded">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold">Headquarters</h5>
+                                <p class="text-gray-500 text-sm">123 Construction Way, Skyline Tower, NY 10001</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-primary/20 p-3 rounded">
+                                <i class="fas fa-phone-alt text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold">Phone Number</h5>
+                                <p class="text-gray-500 text-sm">+1 (800) BUILD-IT / +1 (212) 555-0198</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-primary/20 p-3 rounded">
+                                <i class="fas fa-envelope text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold">Email Address</h5>
+                                <p class="text-gray-500 text-sm">hello@pallavibuild.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-2xl p-8 rounded-lg">
+                    <form class="space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Full Name"
+                                class="w-full border-b-2 border-gray-200 p-3 focus:border-primary outline-none transition">
+                            <input type="email" placeholder="Email Address"
+                                class="w-full border-b-2 border-gray-200 p-3 focus:border-primary outline-none transition">
+                        </div>
+                        <input type="text" placeholder="Subject"
+                            class="w-full border-b-2 border-gray-200 p-3 focus:border-primary outline-none transition">
+                        <textarea rows="4" placeholder="Your Message"
+                            class="w-full border-b-2 border-gray-200 p-3 focus:border-primary outline-none transition"></textarea>
+                        <button
+                            class="w-full bg-secondary text-white font-bold py-4 hover:bg-black transition uppercase tracking-widest">Send
+                            Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-gray-400 py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-12">
+            <div class="col-span-1">
+                <div class="flex items-center gap-2 mb-6">
+                    <div class="bg-primary p-2 rounded">
+                        <i class="fas fa-hard-hat text-black text-xl"></i>
+                    </div>
+                    <span class="text-xl font-black text-white tracking-tighter uppercase">Pallavi<span
+                            class="text-primary">Build</span></span>
+                </div>
+                <p class="text-sm">Building excellence through innovation and reliability since 1995. Certified green
+                    builder and safety leader.</p>
+                <div class="flex gap-4 mt-6">
+                    <a href="#" class="hover:text-primary"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-primary"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-primary"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-primary"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div>
+                <h5 class="text-white font-bold mb-6">Quick Links</h5>
+                <ul class="space-y-4 text-sm">
+                    <li><a href="#" class="hover:text-primary">Services</a></li>
+                    <li><a href="#" class="hover:text-primary">Our Projects</a></li>
+                    <li><a href="#" class="hover:text-primary">Safety Policy</a></li>
+                    <li><a href="#" class="hover:text-primary">Careers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-white font-bold mb-6">Services</h5>
+                <ul class="space-y-4 text-sm">
+                    <li><a href="#" class="hover:text-primary">Custom Homes</a></li>
+                    <li><a href="#" class="hover:text-primary">Office Buildings</a></li>
+                    <li><a href="#" class="hover:text-primary">Interior Design</a></li>
+                    <li><a href="#" class="hover:text-primary">Project Management</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-white font-bold mb-6">Newsletter</h5>
+                <p class="text-sm mb-4">Get the latest construction tips and project updates.</p>
+                <div class="flex">
+                    <input type="email" placeholder="Email"
+                        class="bg-accent border-none p-2 rounded-l w-full outline-none">
+                    <button class="bg-primary text-black px-4 rounded-r"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-4 mt-12 pt-8 border-t border-white/5 text-center text-xs uppercase tracking-widest">
+            &copy; 2026 PallaviBuild Construction Group. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

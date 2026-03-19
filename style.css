@@ -1,0 +1,40 @@
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-card:hover .overlay {
+    opacity: 1;
+}
+
+.before-after-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-handle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #FFB800;
+    cursor: ew-resize;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.slider-handle::after {
+    content: '↔';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFB800;
+    padding: 5px;
+    border-radius: 50%;
+    color: #000;
+    font-weight: bold;
+}
